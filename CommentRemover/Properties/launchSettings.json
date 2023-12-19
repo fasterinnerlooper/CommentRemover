@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommentRemover": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\shafi\\source\\datasets\\LCC_csharp\\data"
+    }
+  }
+}

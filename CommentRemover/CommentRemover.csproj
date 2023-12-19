@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Goblinfactory.Konsole" Version="6.2.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.8.0" />
+    <PackageReference Include="Parquet.Net" Version="4.17.0" />
+    <PackageReference Include="pythonnet" Version="3.0.3" />
+  </ItemGroup>
+
+</Project>
