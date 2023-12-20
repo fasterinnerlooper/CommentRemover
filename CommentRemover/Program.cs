@@ -1,9 +1,17 @@
-﻿using CommentRemover;
-using Konsole;
+﻿using Konsole;
 
-IConsole console = new Writer();
-var dataReader = new DataReader(console);
-foreach (string filename in Directory.GetFiles(".", "*.parquet"))
+namespace CommentRemover;
+
+public class Program
 {
-    await dataReader.ProcessFileAsync(filename);
+    public static async Task Main(string[] args)
+    {
+        IConsole console = new Writer();
+        var dataReader = new DataReader(console);
+        foreach (string filename in Directory.GetFiles(".", "*.parquet"))
+        {
+            await dataReader.ProcessFileAsync(filename);
+        }
+
+    }
 }
