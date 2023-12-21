@@ -8,10 +8,19 @@ public class Program
     {
         IConsole console = new Writer();
         var dataReader = new DataReader(console);
-        foreach (string filename in Directory.GetFiles(".", "*.parquet"))
+        if (args.Length == 1)
         {
+            var filename = Convert.ToString(args[0]);
             await dataReader.ProcessFileAsync(filename);
         }
+        else
+        {
+            foreach (string filename in Directory.GetFiles(".", "*.parquet"))
+            {
+                await dataReader.ProcessFileAsync(filename);
+            }
+        }
+
 
     }
 }

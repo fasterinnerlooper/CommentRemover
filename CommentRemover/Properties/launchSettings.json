@@ -2,6 +2,7 @@
   "profiles": {
     "CommentRemover": {
       "commandName": "Project",
+      "commandLineArgs": "test-00000-of-00001-e75190255efc069b.parquet",
       "workingDirectory": "C:\\Users\\shafi\\source\\datasets\\LCC_csharp\\data"
     }
   }
